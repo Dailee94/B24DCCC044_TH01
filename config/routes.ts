@@ -77,6 +77,16 @@
 		path: '/',
 	},
 	{
+		path: '/bai-1',
+		name: 'Bài 1: Đoán số',
+		component: './Bai1',
+	},
+	{
+		path: '/bai-2',
+		name: 'Bài 2: Todo List',
+		component: './Bai2',
+	},
+	{
 		path: '/403',
 		component: './exception/403/403Page',
 		layout: false,
