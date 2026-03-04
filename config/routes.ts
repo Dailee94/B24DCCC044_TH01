@@ -87,6 +87,11 @@
 		component: './Bai2',
 	},
 	{
+		path: '/bai-3',
+		name: 'Bài 3: OnTuTi',
+		component: './Bai3OnTuTi',
+	},
+	{
 		path: '/403',
 		component: './exception/403/403Page',
 		layout: false,

@@ -18,23 +18,23 @@ const Bai1 = () => {
 		setRemaining(newRemaining);
 
 		if (guess === randomNumber) {
-			setMessage('🎉 Chúc mừng! Bạn đã đoán đúng!');
+			setMessage(' Chúc mừng! Bạn đã đoán đúng!');
 			setIsFinished(true);
 		} else if (guess < randomNumber) {
-			setMessage('📉 Bạn đoán quá thấp!');
+			setMessage(' Bạn đoán quá thấp!');
 		} else {
-			setMessage('📈 Bạn đoán quá cao!');
+			setMessage(' Bạn đoán quá cao!');
 		}
 
 		if (newRemaining === 0 && guess !== randomNumber) {
-			setMessage(`❌ Hết lượt! Số đúng là ${randomNumber}`);
+			setMessage(` Hết lượt! Số đúng là ${randomNumber}`);
 			setIsFinished(true);
 		}
 	};
 
 	return (
 		<div style={styles.container}>
-			<h2>🎯 Game Đoán Số</h2>
+			<h2> Game Đoán Số</h2>
 			<p>Đoán số từ 1 đến 100</p>
 
 			<GameInput onGuess={handleGuess} disabled={isFinished} />
